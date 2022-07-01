@@ -6,9 +6,11 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"time"
 )
 
 func getRoot(w http.ResponseWriter, r *http.Request) {
+	time.Sleep(100 * time.Millisecond)
 	io.WriteString(w, "This is my website!\n")
 }
 
