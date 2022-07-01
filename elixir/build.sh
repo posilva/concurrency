@@ -1,0 +1,1 @@
+DOCKER_BUILDKIT=1 docker buildx build --platform linux/amd64 --no-cache --progress plain --file Dockerfile --output out . 
